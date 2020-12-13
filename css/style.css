@@ -1,8 +1,163 @@
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #fff;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
     margin: 0;
+}
+
+/*начало стилей для блока header*/
+.header {
+    height: 90px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.43);
+    position: relative;
+    z-index: 3;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    line-height: 90px;
+}
+
+.hd__logo_text {
+    font-size: 21px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-left: 19px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    height: 90px;
+}
+
+.header__menu li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 90px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0 25px 0 25px;
+}
+
+.header__menu li:hover {
+    color: #5ac8fb;
+    cursor: pointer;
+}
+
+.header__icon {
+    opacity: 0.5;
+    cursor: pointer;
+    line-height: 90px;
+    text-align: center;
+}
+
+/* начало стилей для блока main*/
+.main {
+    height: 709px;
+    position: relative;
+    text-align: center;
+    bottom: 90px;
+    background: url('../img/header/background.jpg') center no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.main::after {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    display: block;
+    content: '';
+    z-index: -1;
+}
+
+.main__content {
+    position: absolute;
+    left: 50%;
+    margin-left: -410px;
+    top: 300px;
+}
+
+.main__icon {
+    margin-bottom: 50px;
+}
+
+.main__text {
+    position: relative;
+}
+
+.main__text h3 {
+    font-size: 46px;
+    line-height: 37px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.main__text span {
+    font-size: 15px;
+    line-height: 36px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+}
+
+.main__arrow {
+    width: 15px;
+    height: 28px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.main__arrow-right {
+    right: -150px;
+}
+
+.main__arrow-left {
+    left: -150px;
+}
+
+/* блок с преимуществами */
+#features {
+    color: #515151;
+    text-align: center;
+}
+
+.features-title {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.features-subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.features-bottom {
+    padding-top: 138px;
+}
+
+.features-bottom__title {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 13px;
+}
+
+.features-bottom__subtitle {
+    font-size: 15px;
+    font-weight: 300;
 }
